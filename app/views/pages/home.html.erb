@@ -4,9 +4,9 @@
 			<% if user_signed_in? %>
 				# do something
 			<% else %>
-				<p>Press <%= link_to "Start", new_user_session_path, class: "btn btn-primary btn-lg" %> to level up!</p> 
+				<p>Press <%= link_to "Start", new_user_registration_path, class: "btn btn-primary btn-lg" %> to level up!</p> 
 				<p>Or</p>
-				<p><%= link_to "Load", new_user_registration_path , class: "btn btn-primary btn-lg" %> saved game</p>
+				<p><%= link_to "Load", new_user_session_path, class: "btn btn-primary btn-lg" %> saved game</p>
 			<% end %>
 	</div>
 </div>
